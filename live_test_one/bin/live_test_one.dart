@@ -10,18 +10,20 @@ class Media{
 class Song extends Media{
   late String artist;
 
-  Song(this.artist);
+  Song({required this.artist});
 
    @override
   void play() {
-    print('Playing song by $artist');
+    print('Playing song by $artist...');
   }
 }
 
 void main(){
 
-  Song song = Song('Hero Alam...:(');
+  //Create Instance
+  Song song = Song('Hero Alam');
 
-  song.play();
+  //Call the Play Method
+  song.play(); 
 }
 
