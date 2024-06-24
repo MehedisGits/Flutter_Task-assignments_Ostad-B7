@@ -21,7 +21,7 @@ class Song extends Media{
 void main(){
 
   //Create Instance
-  Song song = Song('Hero Alam');
+  Song song = Song(artist: 'Hero Alam');
 
   //Call the Play Method
   song.play(); 
